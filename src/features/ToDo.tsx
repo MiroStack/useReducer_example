@@ -68,7 +68,7 @@ export const Todo = () => {
   console.log(state);
 
   return (
-    <div className="h-screen w-screen bg-amber-100 flex flex-col items-center justify-center">
+    <div className="h-screen w-screen bg-amber-100 flex flex-col gap-2 items-center justify-center">
       <p>This is a todo page</p>
       <form onSubmit={handleSubmit}>
         <input
@@ -78,7 +78,7 @@ export const Todo = () => {
           onChange={handleTodo}
         />
       </form>
-      <ul className="w-full flex flex-col items-center gap-2">
+      <ul className="w-full h-52 flex flex-col items-center gap-2">
         {state.todos?.map((item, index) => (
           <li
             key={index}
